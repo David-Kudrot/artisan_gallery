@@ -7,9 +7,8 @@ from artist.utils import Util
 
 
 
-
-
 class UserRegistrationSerializer(serializers.ModelSerializer):
+  name = serializers.CharField(max_length=200)
   password2 = serializers.CharField(style={'input_type':'password'}, write_only=True)
   class Meta:
     model = User
