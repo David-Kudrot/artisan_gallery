@@ -11,10 +11,8 @@ class Category(models.Model):
         return self.name
 
 
-
-
 class Artwork(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='images/', null=True, blank=True)
     description = models.TextField()

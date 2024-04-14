@@ -7,8 +7,8 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'slug']
 
 class ArtworkSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField(many=False,source='user.name', read_only=True)
+    owner = serializers.StringRelatedField(many=False,source='owner.name', read_only=True)
     category = serializers.StringRelatedField(many=False)
     class Meta:
         model = Artwork
-        fields = ['id', 'user', 'title', 'image', 'description', 'category', 'created_at']
+        fields = ['id', 'owner', 'title', 'image', 'description', 'category', 'created_at']

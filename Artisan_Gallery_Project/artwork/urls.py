@@ -4,7 +4,7 @@ from artwork.views import ArtworkListView
 
 
 router = DefaultRouter()
-router.register('artworks', ArtworkListView, basename='artwork-list')
+router.register('artworks', ArtworkListView, basename='artworks')
 
 
 urlpatterns = [
