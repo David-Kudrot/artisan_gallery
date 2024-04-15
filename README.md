@@ -41,4 +41,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback, please contact [project_owner@example.com](mailto:project_owner@example.com).
+For any inquiries or feedback, please contact [davidkudrot@gmail.com](mailto:davidkudrot@gmail.com).
