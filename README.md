@@ -21,6 +21,7 @@ Artisan Gallery is a platform for artists to showcase their artworks and connect
 - `/api/artist/password-reset-email/`: Send password reset email.
 - `/api/artist/reset-password/{uid}/{token}/`: Reset password via email link.
 - `/api/art/artworks/`: View all artworks.
+- `/api/art/artworks/?params_id=id`: View specific artworks details.
 - `/api/art/artworks/{id}/`: View, edit, or delete a specific artwork.
 
 ## Usage
