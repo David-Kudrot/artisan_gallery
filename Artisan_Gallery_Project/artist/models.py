@@ -46,9 +46,6 @@ class UserManager(BaseUserManager):
 def default_profile_image():
     return "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
 
-# default banner image set korar jonno
-def default_banner_image():
-    return "https://pm1.aminoapps.com/6493/523caa97f0e93e86a127b572547a5eeaacae0e77_hq.jpg"
 
 #  Custom User Model
 class User(AbstractBaseUser):
@@ -59,7 +56,6 @@ class User(AbstractBaseUser):
   )
   name = models.CharField(max_length=200, default="Name")
   profile_image = models.ImageField(upload_to='profile_images/', default=default_profile_image, null=True, blank=True)
-  banner_image = models.ImageField(upload_to='banner_images/', default=default_banner_image, null=True, blank=True)
   terms_and_conditions = models.BooleanField()
   bio = models.CharField(max_length=255, null=True, blank=True, default="Write your bio")
   is_active = models.BooleanField(default=True)
